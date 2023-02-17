@@ -9,44 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Bella</title>
+    <title>Brella</title>
 </head>
 <body>
     <header class="header">
         <div class="header-top">
-            <img class="header-top__logo" src="images/logo.svg" alt="Logo">
+            <a class="header-top__logo-link" href="#">
+                <img class="header-top__logo-img" src="images/logo.svg" alt="Logo">
+            </a>
             <nav class="header-top__nav">
-                <ul class="header-top__menu-list">
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">Our Plan</a>
-                    </li>
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">Employers</a>
-                    </li>
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">Brokers</a>
-                    </li>
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">Members</a>
-                    </li>
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">About</a>
-                    </li>
-                    <li class="header-top__menu-list__item">
-                        <a class="header-top__menu-list__link" href="#">Blog</a>
-                    </li>
-                </ul>
-                <button class="header-top__button">
-                    <a class="header-top__button-link" href="#">Request a demo</a>
-                </button>
+                <a class="header-top__nav__link" href="#">Our Plan</a>
+                <a class="header-top__nav__link" href="#">Employers</a>
+                <a class="header-top__nav__link" href="#">Brokers</a>
+                <a class="header-top__nav__link" href="#">Members</a>
+                <a class="header-top__nav__link" href="#">About</a>
+                <a class="header-top__nav__link link--blog" href="#">Blog</a>
+                <a class="header-top__button-link" href="#">
+                    <button class="header-top__button">Request a demo</button>
+                </a>
                 <a class="header-top__login" href="#">Login</a>
-                <form>
-                    <select>
-                        <option selected>en</option>
-                        <option>ru</option>
-                    </select>
-                </form>
-            </nav>
+                <a class="languages" href="#">EN</a>
         </div>
         <div class="header-content">
             <!-- <div class="container">
