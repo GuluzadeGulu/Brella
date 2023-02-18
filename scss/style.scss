@@ -21,14 +21,19 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+    color: $darkGreen;
+}
+
+button{
+    cursor: pointer;
 }
 
 body{
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    font-family: $Ral;
+    font-family: $ral;
+    color: $darkGreen;
 }
 
 .container{
@@ -48,20 +53,60 @@ body{
 .header-top__nav{
     display: flex;
     align-items: center;
-    gap: 50px;
 }
 
 .header-top__nav__link,
 .header-top__button,
 .header-top__login,
-.languages{
-    color: $darkGreen;
+.languages,
+.login-person{
     font-weight: 700;
     line-height: 20px;
+    margin-right: 50px;
+}
+
+.header-top__nav__link:hover{
+    color: $green;
+}
+
+.header-top__nav__box-for-login{
+    margin-right: 26px;
+    position: relative;
+
+    .header-top__login{
+        margin: 0;
+        border: none;
+        background-color: $white;
+    }
+
+    .hidden-login{
+        position: absolute;
+        top: 30px;
+        background-color: $white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // ! I hide the 'hidden-login'
+        display: none;
+
+        .login-person{
+            margin: 0;
+        }
+        .login-person:hover{
+            color: $green;
+        }
+    }
+    // ! I show the 'hidden-login'
+    .show-login{
+        display: flex;
+    }
 }
 
 .header-top__button-link{
-    padding-left: 19px;
+    margin: 0 29px 0 19px;
 
     .header-top__button{
         color: $white;
@@ -69,7 +114,16 @@ body{
         border: none;
         border-radius: 7px;
         padding: 10px 14.53px;
+        cursor: pointer;
+        margin: 0;
     }
+    .header-top__button:hover{
+        background-color: $darkGreen;
+    }
+}
+
+.languages{
+    margin: 0;
 }
 
 // *** HEADER CONTENT ***
@@ -80,3 +134,89 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.header-content__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content__inner__caption{
+    margin: 161px 0 40px;
+    font-family: $rob;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    max-width: 516px;
+}
+
+.header-content__text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.box-for-findOut{
+    position: relative;
+}
+
+.findOut-choice{
+    margin-top: 16px;
+    padding: 20px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    background-color: $white;
+    white-space: nowrap;
+    color: $gray;
+    font-size: 14px;
+    line-height: 20px;
+
+    span{
+        margin-left: 15px;
+    }
+}
+
+.btn-findOut{
+    margin-left: -10px;
+    padding: 20px 35px;
+    background-color: $green;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.btn-findOut:hover{
+    background-color: $darkGreen;
+}
+
+.hidden-findOut{
+    position: absolute;
+    top: 71px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    // ! I hide the 'hidden-findOut'
+    display: none;
+
+
+
+    .choice{
+        display: block;
+        padding: 20px 33.5px 20px 20px;
+        color: $black;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .choice:hover{
+        background-color: $lightBlue;
+    }
+}
+
+    // ! I show the 'hidden-findOut'
+    .show-findOut{
+        display: flex;
+    }
