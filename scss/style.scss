@@ -123,6 +123,7 @@ body{
 }
 
 .languages{
+    text-transform: uppercase;
     margin: 0;
 }
 
@@ -209,6 +210,8 @@ body{
         color: $black;
         font-size: 14px;
         line-height: 20px;
+        z-index: 3;
+        
     }
 
     .choice:hover{
@@ -220,3 +223,135 @@ body{
     .show-findOut{
         display: flex;
     }
+
+.box-2{
+    display: flex;
+    gap: 16px;
+    background-color: $white;
+    padding: 50px;
+    border-radius: 6px;
+
+    max-width: 1200px;
+    position: absolute;
+    bottom: -190px;
+}
+
+.items{
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box-2-img{
+    grid-row: 1/3;
+}
+
+.box-2-title{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.box-2-text{
+    line-height: 20px;
+}
+
+
+.whyBrella{
+    padding: 176px 120px 120px;
+}
+
+.whyBrella-inner{
+    display: flex;
+    gap: 0 60px;
+}
+
+.whuBrella-content-1{
+    max-width: 510px;
+}
+
+.whyBrella-pre-header{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 20px;
+    color: $green;
+    margin-bottom: 20px;
+}
+
+.whyBrella-heading{
+    font-family: $rob;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 34px;
+}
+
+.whyBrella-text{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02px;
+    color: $gray;
+    margin-bottom: 26px;
+}
+
+.whyBrella-link{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02px;
+    border-bottom: 2px solid $darkGreen;
+    padding-bottom: 14px;
+    transition: all .8s;
+}
+
+.whyBrella-link:hover{
+    color: $green;
+    border-bottom: 2px solid $green;
+    padding-bottom: 5px;
+}
+
+.whuBrella-content-2{
+    max-width: 510px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.percent{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 51px;
+}
+
+.whuBrella-content-2__text,
+.whuBrella-content-2__link
+{
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.02px;
+}
+
+.whuBrella-content-2__text{
+    display: inline-block;
+    max-width: 222px;
+    z-index: 3;
+}
+
+.whuBrella-content-2__link{
+    border-bottom: 1px solid $darkGreen;
+}
+
+.whuBrella-content-2__link:hover{
+    color: $green;
+    border-bottom: 1px solid $green;
+}
+
+.diagram{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}

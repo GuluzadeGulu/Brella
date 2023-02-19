@@ -113,6 +113,7 @@ body {
 }
 
 .languages {
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -193,6 +194,7 @@ body {
   color: #222222;
   font-size: 14px;
   line-height: 20px;
+  z-index: 3;
 }
 .hidden-findOut .choice:hover {
   background-color: #AEE0F9;
@@ -200,4 +202,132 @@ body {
 
 .show-findOut {
   display: flex;
+}
+
+.box-2 {
+  display: flex;
+  gap: 16px;
+  background-color: #FFFFFF;
+  padding: 50px;
+  border-radius: 6px;
+  max-width: 1200px;
+  position: absolute;
+  bottom: -190px;
+}
+
+.items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.box-2-img {
+  grid-row: 1/3;
+}
+
+.box-2-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.box-2-text {
+  line-height: 20px;
+}
+
+.whyBrella {
+  padding: 176px 120px 120px;
+}
+
+.whyBrella-inner {
+  display: flex;
+  gap: 0 60px;
+}
+
+.whuBrella-content-1 {
+  max-width: 510px;
+}
+
+.whyBrella-pre-header {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #43806C;
+  margin-bottom: 20px;
+}
+
+.whyBrella-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 34px;
+}
+
+.whyBrella-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02px;
+  color: #757575;
+  margin-bottom: 26px;
+}
+
+.whyBrella-link {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02px;
+  border-bottom: 2px solid #214E41;
+  padding-bottom: 14px;
+  transition: all 0.8s;
+}
+
+.whyBrella-link:hover {
+  color: #43806C;
+  border-bottom: 2px solid #43806C;
+  padding-bottom: 5px;
+}
+
+.whuBrella-content-2 {
+  max-width: 510px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.percent {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 90px;
+  margin-bottom: 51px;
+}
+
+.whuBrella-content-2__text,
+.whuBrella-content-2__link {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02px;
+}
+
+.whuBrella-content-2__text {
+  display: inline-block;
+  max-width: 222px;
+  z-index: 3;
+}
+
+.whuBrella-content-2__link {
+  border-bottom: 1px solid #214E41;
+}
+
+.whuBrella-content-2__link:hover {
+  color: #43806C;
+  border-bottom: 1px solid #43806C;
+}
+
+.diagram {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
