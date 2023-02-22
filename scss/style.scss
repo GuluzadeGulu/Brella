@@ -47,7 +47,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 29px 77px 41px 45px;
+    padding: 29px 77px 29px 45px;
 }
 
 .header-top__nav{
@@ -258,6 +258,7 @@ body{
 }
 
 
+// *** SECTION why brella ***
 .whyBrella{
     padding: 176px 120px 120px;
 }
@@ -272,12 +273,12 @@ body{
 }
 
 .whyBrella-pre-header{
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-weight: 400;
     font-size: 13px;
     line-height: 20px;
-    color: $green;
-    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
 }
 
 .whyBrella-heading{
@@ -354,4 +355,69 @@ body{
     position: absolute;
     left: 0px;
     bottom: 0px;
+}
+
+// *** SECTION brella brings ***
+.brellaBrings-inner{
+    display: flex;
+}
+
+.brellaBrings__content-1{
+    width: 50%;
+    padding: 120px 150px 120px 105px;
+    background-color: $sky;
+
+    .brellaBrings__content-1__pre-header{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 20px; 
+    }
+
+    .brellaBrings__content-1__link{
+        display: block;
+        max-width: 600px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        color: $green;
+        margin-bottom: 18px;
+        transition: all 0.5s;
+
+        img{
+            margin-left: 20px;
+        }
+    }
+
+    .brellaBrings__content-1__link:hover{
+        padding-left: 10px;
+    }
+
+    .brellaBrings__content-1__link--first-child{
+        font-weight: 700;
+        color: $darkGreen;
+    }
+}
+
+.brellaBrings__content-2{
+    width: 50%;
+    padding: 160px 120px 208px 115px;
+    background-color: $darkGreen;
+    color: $white;
+
+    .brellaBrings__content-2__text-1,
+    .brellaBrings__content-2__text-2{
+        display: block;
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.02px;
+    }
+
+    .brellaBrings__content-2__text-1{
+        margin-bottom: 34px;
+    }
 }
